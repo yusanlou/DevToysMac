@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EBA51EC2806D5E0007E9BB2 /* ByteConverterView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA51EB2806D5E0007E9BB2 /* ByteConverterView+.swift */; };
+		1EE3DD672863039E001CE7B8 /* UnicodeDecoder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3DD662863039D001CE7B8 /* UnicodeDecoder+.swift */; };
 		6B42318827AD1BC0002D135A /* HyphenationRemoverView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42318727AD1BC0002D135A /* HyphenationRemoverView+.swift */; };
 		B608540B27A66694003BF243 /* SectionButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B608540A27A66694003BF243 /* SectionButton+.swift */; };
 		B608541227A66A90003BF243 /* JSONYamlConverterView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B608541127A66A90003BF243 /* JSONYamlConverterView+.swift */; };
@@ -18,7 +20,6 @@
 		B6113ECD27C4B96C00ACC6E8 /* EmptyImageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6113ECC27C4B96C00ACC6E8 /* EmptyImageTableView.swift */; };
 		B6113ECF27C4BF2300ACC6E8 /* FileConflictAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6113ECE27C4BF2300ACC6E8 /* FileConflictAvoider.swift */; };
 		B6113F0127C4BF7700ACC6E8 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6113F0027C4BF7700ACC6E8 /* Identifier.swift */; };
-		B6113F0927C4C6C900ACC6E8 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B6113F0827C4C6C900ACC6E8 /* Sparkle */; };
 		B61157C027C8C3F9004D77A5 /* JSONSearchView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61157BF27C8C3F9004D77A5 /* JSONSearchView+.swift */; };
 		B61157C327C8C78A004D77A5 /* JSONNormalSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61157C227C8C78A004D77A5 /* JSONNormalSearchView.swift */; };
 		B61157C527C8D77A004D77A5 /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61157C427C8D77A004D77A5 /* DragImageView.swift */; };
@@ -225,6 +226,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EBA51EB2806D5E0007E9BB2 /* ByteConverterView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteConverterView+.swift"; sourceTree = "<group>"; };
+		1EE3DD662863039D001CE7B8 /* UnicodeDecoder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnicodeDecoder+.swift"; sourceTree = "<group>"; };
 		6B42318727AD1BC0002D135A /* HyphenationRemoverView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HyphenationRemoverView+.swift"; sourceTree = "<group>"; };
 		B608540A27A66694003BF243 /* SectionButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionButton+.swift"; sourceTree = "<group>"; };
 		B608541127A66A90003BF243 /* JSONYamlConverterView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONYamlConverterView+.swift"; sourceTree = "<group>"; };
@@ -425,7 +428,6 @@
 			files = (
 				B684EA2627C5EFDB0014802F /* DiffMatchPatch in Frameworks */,
 				B6D1AF0627A5603B0022FED2 /* Highlightr in Frameworks */,
-				B6113F0927C4C6C900ACC6E8 /* Sparkle in Frameworks */,
 				B608541527A66CC9003BF243 /* CoreUtil.framework in Frameworks */,
 				B680A79827A69268007CB707 /* HTMLEntities in Frameworks */,
 				B608541B27A672E3003BF243 /* Yams in Frameworks */,
@@ -451,6 +453,7 @@
 				B608541127A66A90003BF243 /* JSONYamlConverterView+.swift */,
 				B608541D27A67B48003BF243 /* NumberBaseConverterView+.swift */,
 				B64AA44F27AD0D3900EC436D /* DateConverterView+.swift */,
+				1EBA51EB2806D5E0007E9BB2 /* ByteConverterView+.swift */,
 			);
 			path = Convert;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 		B680A79327A68B2D007CB707 /* Coder */ = {
 			isa = PBXGroup;
 			children = (
+				1EE3DD662863039D001CE7B8 /* UnicodeDecoder+.swift */,
 				B680A79427A68B35007CB707 /* HTMLDecoderView+.swift */,
 				B680A79927A69324007CB707 /* URLDecoderView+.swift */,
 				B680A79B27A6947D007CB707 /* Base64DecoderView+.swift */,
@@ -969,7 +973,6 @@
 				B680A79727A69268007CB707 /* HTMLEntities */,
 				B680A8AC27A8E31C007CB707 /* CryptoSwift */,
 				B6B5728727ACD2F20069DBA7 /* Kanna */,
-				B6113F0827C4C6C900ACC6E8 /* Sparkle */,
 				B684EA2527C5EFDB0014802F /* DiffMatchPatch */,
 			);
 			productName = DevToys;
@@ -1011,7 +1014,6 @@
 				B680A79627A69268007CB707 /* XCRemoteSwiftPackageReference "swift-html-entities" */,
 				B680A8AB27A8E31C007CB707 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 				B6B5728627ACD2F20069DBA7 /* XCRemoteSwiftPackageReference "Kanna" */,
-				B6113F0727C4C6C900ACC6E8 /* XCRemoteSwiftPackageReference "Sparkle" */,
 				B684EA2427C5EFDB0014802F /* XCRemoteSwiftPackageReference "DiffMatchPatch" */,
 			);
 			productRefGroup = B64B1E7127A4F5E200AC2601 /* Products */;
@@ -1139,11 +1141,13 @@
 				B67A4C5827C0EA84009277FB /* ACOverlayWrapper.swift in Sources */,
 				B67A4C5427C0EA84009277FB /* Ex+CGImage.swift in Sources */,
 				B620142327A929B400AF5386 /* TagCloudView.swift in Sources */,
+				1EBA51EC2806D5E0007E9BB2 /* ByteConverterView+.swift in Sources */,
 				B67A4C5627C0EA84009277FB /* ACOverlayController.swift in Sources */,
 				B6113ECF27C4BF2300ACC6E8 /* FileConflictAvoider.swift in Sources */,
 				B67A4C0927C0BA00009277FB /* OpacityBarView.swift in Sources */,
 				B6B5728027ACC3AF0069DBA7 /* ChecksumGeneratorView+.swift in Sources */,
 				B64B209827A532DF00AC2601 /* AppWindowController.swift in Sources */,
+				1EE3DD672863039E001CE7B8 /* UnicodeDecoder+.swift in Sources */,
 				B67A4CC027C0F4BA009277FB /* BoxHSBColorPicker.swift in Sources */,
 				B673A90227AD0E78005512AB /* DatePicker.swift in Sources */,
 				B620141C27A917E000AF5386 /* Button.swift in Sources */,
@@ -1399,7 +1403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.10;
-				DEVELOPMENT_TEAM = T5HMUWWK5R;
+				DEVELOPMENT_TEAM = P8DBSUB84X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DevToys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1414,8 +1418,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuki.DevToys;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuki.DevToys2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_OBJC_BRIDGING_HEADER = "DevToys/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1432,7 +1437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.10;
-				DEVELOPMENT_TEAM = T5HMUWWK5R;
+				DEVELOPMENT_TEAM = P8DBSUB84X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DevToys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1447,8 +1452,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuki.DevToys;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuki.DevToys2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_OBJC_BRIDGING_HEADER = "DevToys/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1485,14 +1491,6 @@
 			requirement = {
 				branch = main;
 				kind = branch;
-			};
-		};
-		B6113F0727C4C6C900ACC6E8 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
 			};
 		};
 		B66850F027A65FC200A3FE01 /* XCRemoteSwiftPackageReference "SwiftJSONFormatter" */ = {
@@ -1550,11 +1548,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B608541927A672E3003BF243 /* XCRemoteSwiftPackageReference "Yams" */;
 			productName = Yams;
-		};
-		B6113F0827C4C6C900ACC6E8 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6113F0727C4C6C900ACC6E8 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
 		};
 		B66850F127A65FC200A3FE01 /* SwiftJSONFormatter */ = {
 			isa = XCSwiftPackageProductDependency;

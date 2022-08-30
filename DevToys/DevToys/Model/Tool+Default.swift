@@ -41,6 +41,12 @@ extension Tool {
         viewController: DateConverterViewController()
     )
     
+    static let byteConverter = Tool(
+        title: "tool.byte.title".localized(), identifier: "byte.converter", category: .converter, icon: R.Image.Tool.dateConvert,
+        sidebarTitle: "tool.byte.title".localized(), toolDescription: "tool.date.byte".localized(),
+        viewController: ByteConverterViewController()
+    )
+    
     // MARK: - Encoder / Decoder -
     static let htmlCoder = Tool(
         title: "tool.html.title".localized(), identifier: "html.converter", category: .encoderDecoder, icon: R.Image.Tool.htmlCoder,
@@ -61,6 +67,12 @@ extension Tool {
         title: "tool.jwt.title".localized(), identifier: "jwt.converter", category: .encoderDecoder, icon: R.Image.Tool.jwtCoder,
         sidebarTitle: "tool.jwt.mintitle".localized(), toolDescription: "tool.jwt.description".localized(),
         viewController: JWTDecoderViewController()
+    )
+    
+    static let uncCoder = Tool(
+        title: "tool.unc.title".localized(), identifier: "unc.converter", category: .encoderDecoder, icon: R.Image.Tool.jwtCoder,
+        sidebarTitle: "tool.unc.title".localized(), toolDescription: "tool.jwt.description".localized(),
+        viewController: UnicodeDecoderViewController()
     )
     
     // MARK: - Formatter -
@@ -189,11 +201,13 @@ extension ToolManager {
         toolManager.registerTool(.jsonYamlConverter)
         toolManager.registerTool(.numberBaseConverter)
         toolManager.registerTool(.dateConverter)
+        toolManager.registerTool(.byteConverter)
 
         toolManager.registerTool(.htmlCoder)
         toolManager.registerTool(.urlCoder)
         toolManager.registerTool(.base64Coder)
         toolManager.registerTool(.jwtCoder)
+        toolManager.registerTool(.uncCoder)
 
         toolManager.registerTool(.jsonFormatter)
         toolManager.registerTool(.xmlFormatter)

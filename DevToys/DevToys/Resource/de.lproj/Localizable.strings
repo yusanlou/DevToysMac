@@ -72,6 +72,9 @@
 "ISO 8601" = "ISO 8601";
 "Calender" = "Kalender";
 
+"tool.byte.title" = "Konvertierung der Byte-Einheit";
+"tool.unc.title" = "Unicode";
+
 "tool.html.title" = "HTML Encoder / Decoder";
 "tool.html.mintitle" = "HTML";
 "tool.html.description" = "Kodiert oder dekodiert alle zutreffenden Zeichen in ihr entsprechendes HTML";

@@ -80,6 +80,9 @@
 "ISO 8601" = "ISO 8601";
 "Calender" = "カレンダー";
 
+"tool.byte.title" = "バイト単位の変換";
+"tool.unc.title" = "Unicode";
+
 "tool.html.title" = "HTMLのエンコード・デコード";
 "tool.html.mintitle" = "HTML";
 "tool.html.description" = "文字をHTMLエスケープ・アンエスケープします";
